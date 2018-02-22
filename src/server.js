@@ -23,7 +23,11 @@ const sendUserError = (err, res) => {
   }
 };
 
+
 // TODO: implement routes
+server.post('/users', sendUserError, (req, res) => {
+
+});
 
 // TODO: add local middleware to this route to ensure the user is logged in
 server.get('/me', (req, res) => {
